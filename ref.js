@@ -26,5 +26,10 @@ console.log(product);
 
 //Number(), String(), Boolean(), covert a value to that type
 //prompt is not defined in node.js
+//conditional execution of code branches
 //let n = Number(prompt("Enter a number"));
-//console.log(`The square of ${n} is ${n*n}`);
+//if (!Number.isNaN(n)){
+    //console.log(`The square of ${n} is ${n*n}`);
+    //console.log(`${n} is the square root of ${n*n}`);
+//}
+
