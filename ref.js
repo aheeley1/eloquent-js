@@ -37,13 +37,57 @@ console.log(product);
 // }
 
 //chaining conditions
-let n = Number(prompt("Enter a number: "));
+// let n = Number(prompt("Enter a number: "));
 
-if (n < 10){
-    console.log(`${n} is a small number.`);
-} else if (n < 100) {
-    console.log(`${n} is a medium number.`);
-} else {
-    console.log(`${n} is a large number.`);
+// if (n < 10){
+//     console.log(`${n} is a small number.`);
+// } else if (n < 100) {
+//     console.log(`${n} is a medium number.`);
+// } else {
+//     console.log(`${n} is a large number.`);
+// }
+
+//print even numbers with while(test_expression)
+//each loop iteration runs with a updated state
+//counter binding is created to track the progress of the loop
+//text expression evaluated if counter has reached it's end value
+//add the end of the loop body, the counter is updated to track progress
+let counter = 0;
+
+while (counter <= 12) {
+    console.log(counter);
+    counter += 2;
 }
 
+let result = 1, counter2 = 0;
+
+while (counter2 < 10) {
+    result *= 2;
+    counter2++;
+}
+
+console.log("Result: ", result);
+
+//let yourName;
+
+//do {
+    // every non-empty string evaluates to true
+    // ! will convert a string to boolean before evaluation
+    //yourName = prompt("Who are you?");
+//} while (!yourName);
+
+//console.log(yourName);
+
+//(;;) -- first:loop initializer, usually by defining a binding
+// second: test condition, third: updates the state of the binding after each loop execution
+// may be shorter and clearer than a while construct
+for (let i = 0; i <=12; i+= 2) {
+    console.log("Index:", i);
+}
+
+//compute 2^10
+let c_result = 1;
+for (let i = 0; i < 10;i++) {
+    c_result *= 2;
+}
+console.log(c_result);
