@@ -91,3 +91,17 @@ for (let i = 0; i < 10;i++) {
     c_result *= 2;
 }
 console.log(c_result);
+
+//break keyword stops loop execution
+//before loop condition evaluated to false
+//no test condition in the loop below
+//will execute forever if break not called
+for (let current = 20;;current++) {
+    if (current % 7 === 0) {
+        console.log("Current:", current);
+        break;
+    }
+}
+//continue keyord exits current loop interation and returns to loop condition
+//break and continue determine loop progress
+//shortcuts to update bindings succinctly: +=,-+,*=,++,--
